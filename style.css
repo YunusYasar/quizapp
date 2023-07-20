@@ -1,12 +1,32 @@
 body{
     background-color: #FEFAEF !important;
-}
-.container{
     min-height: 100vh;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-quiz{
+    width: 750px;
+    margin: 10%;
     background-color: #FEFAEF;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.list-right{
+    background-image: url(img/brainbg.jpg);
+    background-position: center;
+    background-color: #EBEBEB !important;
+    padding: 50px 50px !important;
+}
+
+
+.card-container{
+    width: 100% !important;
+    height: 100% !important;
 }
 .list-left{
     background-color: #27355C !important;
@@ -17,9 +37,7 @@ body{
     align-items: center;
     flex-direction: column;
 }
-.list-right{
-    background-color: #EBEBEB !important;
-}
+
 .start-btn{
     background-color: #FF4E10 !important;
     border: none !important;
@@ -50,4 +68,22 @@ body{
 
 .bg-success, .bg-danger{
     color: white !important;
+}
+
+.progress, .progress-stacked {
+    background-color: #27355C !important;
+    margin-bottom: 24px;
+    border-radius: 0px !important;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .container-quiz{
+        width: 80%;
+    }
+    .list-left ul{
+        flex-direction: row;
+    }
+    .list-right{
+        padding: 10px 10px !important;
+    }
 }
